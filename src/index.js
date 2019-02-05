@@ -12,7 +12,7 @@ import App from "./App";
 
 const store = createStore(
   rootReducer,
-  applyMiddleware(thunk)
+  applyMiddleware(thunk, logger)
 );
 
 ReactDOM.render(
